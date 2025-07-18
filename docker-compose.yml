@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    container_name: lacuca-barbershop-backend
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./backend:/usr/app
+
+  frontend:
+    build: ./frontend
+    container_name: lacuca-barbershop-frontend
+    depends_on:
+      - 'backend'
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend:/usr/app

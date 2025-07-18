@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "lacuca-barbershop",
+  "version": "1.0.0",
+  "description": "Monorepo for lacucaracha's barbershop. Npm init was required here to use commitizen.",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
